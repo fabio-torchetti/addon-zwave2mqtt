@@ -1,5 +1,5 @@
 {
-    "name": "Testing Repo - Community",
-    "url": "https://addons.community",
-    "maintainer": "Franck Nijhof <frenck@addons.community>"
-  }
+    "name": "ZWaveToMQTT Dev Repo",
+    "url": "https://github.com/fabio-torchetti/addon-zwave2mqtt",
+    "maintainer": "Fabio 'MrWHO' Torchetti <fabbari@gmail.com>"
+}

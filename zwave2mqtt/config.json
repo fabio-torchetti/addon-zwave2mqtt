@@ -29,7 +29,7 @@
     "root_password": ""
   },
   "schema": {
-    "enable_ssh": "boolean?",
+    "enable_ssh": "bool",
     "root_password": "password?"
   }
 }
