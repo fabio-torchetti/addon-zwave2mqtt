@@ -8,6 +8,7 @@ ssh-keygen -b 521 -t ecdsa -C"$(id -un)@$(hostname)-$(date -Iseconds)" -f /etc/s
 
 ROOT_PASS="$(bashio::config 'root_password')"
 if [ ! -z "${ROOT_PASS}" ]
+then
   bashio::log.info "Setting up root user password"
   passwd -u root
   echo -e "${ROOT_PASS}\n${ROOT_PASS}" | passwd  root
