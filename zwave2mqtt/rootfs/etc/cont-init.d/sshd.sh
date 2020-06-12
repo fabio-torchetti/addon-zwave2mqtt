@@ -4,7 +4,7 @@
 # Configures OpenSSH for use with this add-on.
 # ==============================================================================
 
-ssh-keygen -b 521 -t ecdsa -C"$(id -un)@$(hostname)-$(date -Iseconds)" -f /etc/ssh/ssh_host_ecdsa_key -P
+ssh-keygen -b 521 -t ecdsa -C"$(id -un)@$(hostname)-$(date -Iseconds)" -f /etc/ssh/ssh_host_ecdsa_key -P ""
 
 ROOT_PASS="$(bashio::config 'root_password')"
 if [ ! -z "${ROOT_PASS}" ]
