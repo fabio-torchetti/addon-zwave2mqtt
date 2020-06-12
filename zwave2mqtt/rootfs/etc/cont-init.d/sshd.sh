@@ -12,6 +12,7 @@ then
   bashio::log.info "Setting up root user password"
   passwd -u root
   echo -e "${ROOT_PASS}\n${ROOT_PASS}" | passwd  root
+  echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 else
   bashio::log.info "NOT setting up root pass - will be unable to use ssh"
 fi
